@@ -74,11 +74,13 @@ app.post('/api/todos', (req, res) => {
 
 // PUT /api/todos/:id
 app.put('/api/todos/:id', (req, res) =>{
-  if (req.body.id) {
-    const updatedTodo = todoList.find((todo)=>todo.id === Number.parseInt(req.body.id))
-    console.log(updatedTodo);
-
+  res.json(req.body);
+  const updatedTodo = {
+    id: Number.parseInt(req.params.id),
+    todo: req.body.todo,
   }
+  let todoIndex = todoList.findIndex((todo)=>todo.id == req.params.id)
+  todoList[todoIndex] = updatedTodo;
 })
 
 // DELETE /api/todos/:id
