@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background-color: white;
     display: flex;
     justify-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -8,21 +8,23 @@ body {
 .todo-container {
     margin-top: 200px;
     width: calc(50% - 100px);
-    box-shadow: rgba(5, 5, 5, .3);
 }
 
 .todo-form-container {
     display: flex;
     flex-direction: column;
-    background-color: #7fff00;
+    background-color: white;
     border-radius: 20px;  
     margin: 10px 0;
     padding: 10px;
-
+    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, .6);
+    -mox-box-shadow: 1px 1px 10px rgba(0, 0, 0, .6);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .6);
 }
 
 h1 {
     color: #5a81a1;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
 }
 
 input:focus {
@@ -30,11 +32,12 @@ input:focus {
 }
 
 .todo-input {
-    color: #efefef;
+    color: #1d300a;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
     width: calc(80%);
     min-height: 30px;
     border-style: none;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     background-color: rgba(0, 0, 0, 0);
 }
