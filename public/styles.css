@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(16, 17, 15);
+    background-color: rgb(37, 37, 36);
     display: flex;
     justify-content: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -16,9 +16,9 @@ body {
     background-color: white;
     border-radius: 20px;  
     padding: 10px;
-    -webkit-box-shadow: 1px 1px 20px rgba(230, 230, 230, .2);
-    -mox-box-shadow: 1px 1px 20px rgba(230, 230, 230, .2);
-    box-shadow: 1px 1px 20px rgba(230, 230, 230, .2);
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+    -mox-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9);
 }
 
 .todo-form {
@@ -85,6 +85,7 @@ button {
 
 .update-button {
     background-color: green;
+    margin-right: 10px;
 }
 
 .delete-button {
